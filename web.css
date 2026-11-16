@@ -1,0 +1,482 @@
+
+/* =====================================
+   GLOBAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: #080d12;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.header {
+    background: #080d12;
+    border-bottom: 1px solid #20313a;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.logo span {
+    color: #22e69a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #a3b1b8;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #22e69a;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+    max-width: 1150px;
+    min-height: 450px;
+    margin: auto;
+    padding: 90px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid #20313a;
+}
+
+.status {
+    color: #22e69a;
+    font-family: monospace;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.intro {
+    color: #22e69a;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 75px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #22e69a;
+}
+
+.hero-description {
+    color: #a3b1b8;
+    max-width: 650px;
+    margin: 25px 0;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #22e69a;
+    color: #06130d;
+}
+
+.primary:hover {
+    background: #70ffc0;
+}
+
+.secondary {
+    border: 1px solid #34434c;
+}
+
+.secondary:hover {
+    border-color: #22e69a;
+    color: #22e69a;
+}
+
+
+/* =====================================
+   STATISTICS
+===================================== */
+
+.stats {
+    max-width: 1150px;
+    margin: auto;
+    padding: 35px 22px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.stat-card {
+    background: #101a20;
+    border: 1px solid #26383e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.stat-card h2 {
+    color: #22e69a;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: #a3b1b8;
+    font-size: 12px;
+}
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 80px 22px;
+}
+
+.section-tag {
+    color: #22e69a;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #a3b1b8;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+
+/* =====================================
+   WRITEUP CARDS
+===================================== */
+
+.writeup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.writeup-card {
+    background: #101a20;
+    border: 1px solid #26383e;
+    border-radius: 7px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.writeup-card:hover {
+    border-color: #22e69a;
+    transform: translateY(-5px);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.category {
+    color: #22e69a;
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.difficulty {
+    font-size: 11px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.easy {
+    background: #123c2c;
+    color: #22e69a;
+}
+
+.medium {
+    background: #49351a;
+    color: #ffc15a;
+}
+
+.writeup-card h3 {
+    font-size: 21px;
+    margin: 25px 0 12px;
+}
+
+.writeup-card > p:not(.note) {
+    color: #a3b1b8;
+    font-size: 13px;
+    min-height: 65px;
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   CARD INFORMATION
+===================================== */
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-top: 1px solid #26383e;
+    padding-top: 17px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #a3b1b8;
+}
+
+.completed {
+    color: #22e69a;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   GITHUB BUTTON
+===================================== */
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 11px 17px;
+    font-size: 12px;
+    border: 1px solid #34434c;
+    color: #22e69a;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.github-btn:hover {
+    background: #22e69a;
+    color: #06130d;
+    border-color: #22e69a;
+}
+
+.note {
+    font-size: 11px;
+    color: #8999a2;
+    margin-top: 12px;
+}
+
+
+/* =====================================
+   GITHUB SECTION
+===================================== */
+
+.github-section {
+    text-align: center;
+    padding: 75px 22px;
+    border-top: 1px solid #20313a;
+    border-bottom: 1px solid #20313a;
+    background: #0c141a;
+}
+
+.github-section .section-tag {
+    color: #22e69a;
+    font-family: monospace;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.github-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.github-section p:not(.section-tag) {
+    max-width: 600px;
+    margin: auto;
+    color: #a3b1b8;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.github-main-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 22px;
+    border: 1px solid #22e69a;
+    color: #22e69a;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.github-main-btn:hover {
+    background: #22e69a;
+    color: #06130d;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    color: #85939b;
+    font-size: 12px;
+}
+
+footer p + p {
+    margin-top: 8px;
+}
+
+footer span {
+    color: #22e69a;
+    font-family: monospace;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .writeup-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 65px 22px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .section h2 {
+        font-size: 29px;
+    }
+
+    .card-info {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .writeup-card {
+        padding: 19px;
+    }
+
+}
