@@ -101,7 +101,7 @@ Use the techniques and knowledge responsibly. Only test systems where you have e
 
 ## 👨‍💻 Author
 
-**jash1210**
+**jash kania**
 
 - GitHub: https://github.com/jash1210
 
